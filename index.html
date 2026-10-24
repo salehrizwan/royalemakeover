@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <script>
+      (function() {
+        try {
+          var _origFetch = window.fetch;
+          var _currentFetch = _origFetch ? _origFetch.bind(window) : undefined;
+          Object.defineProperty(window, 'fetch', {
+            get: function() { return _currentFetch; },
+            set: function(val) { _currentFetch = val; },
+            configurable: true,
+            enumerable: true
+          });
+        } catch (e) {
+          // ignore if already non-configurable
+        }
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royale Makeover — Luxury Beauty &amp; Hair Salon in Sialkot</title>
+    <meta name="description" content="Discover your beauty at Royale Makeover in Nekapura, Sialkot. Personalized hair styling, signature haircuts, expert balayage, coloring, and restorative hair treatments." />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    
+    <!-- Open Graph & Social Cards -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Royale Makeover — Luxury Beauty &amp; Hair Salon in Sialkot" />
+    <meta property="og:description" content="Discover your beauty at Royale Makeover in Nekapura, Sialkot. Personalized hair styling, signature haircuts, expert balayage, coloring, and restorative hair treatments." />
+    <meta property="og:image" content="/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Royale Makeover — Luxury Beauty &amp; Hair Salon in Sialkot" />
+    <meta name="twitter:description" content="Discover your beauty at Royale Makeover in Nekapura, Sialkot. Hair styling, coloring, and treatments." />
+    <meta name="twitter:image" content="/logo.png" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Parisienne&display=swap" rel="stylesheet" />
+
+    <!-- Schema.org JSON-LD Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "name": "Royale Makeover",
+      "image": "/logo.png",
+      "description": "Discover your beauty with personalized hair styling, expert coloring, and professional beauty care in Sialkot.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bhagowal Road, Opposite Sialkot Model School, Nekapura",
+        "addressLocality": "Sialkot",
+        "addressRegion": "Punjab",
+        "postalCode": "51310",
+        "addressCountry": "PK"
+      },
+      "sameAs": [
+        "https://www.instagram.com/royalemakeover/",
+        "https://www.facebook.com/113039387218376/"
+      ],
+      "priceRange": "PKR 500 - PKR 35,000"
+    }
+    </script>
+  </head>
+  <body class="bg-[#FFFCFD] text-[#383038] font-sans antialiased selection:bg-[#F6DCE4] selection:text-[#383038]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,6 @@
+{
+  "name": "Royale Makeover Salon",
+  "description": "Premium beauty salon in Nekapura, Sialkot, Pakistan offering professional hair styling, coloring, and treatments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

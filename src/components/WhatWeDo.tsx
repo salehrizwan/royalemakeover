@@ -91,7 +91,9 @@ export const WhatWeDo: React.FC = () => {
         <div className="relative -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
           <div
             ref={sliderRef}
-            className="flex gap-5 sm:gap-6 overflow-x-auto pb-6 pt-2 scroll-smooth snap-x snap-mandatory scrollbar-none"
+          
+className="flex gap-3 sm:gap-6 overflow-x-auto pb-6 pt-2 scroll-smooth snap-x snap-mandatory scrollbar-none"
+
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {INSTAGRAM_REELS.map((reel) => (
@@ -100,7 +102,9 @@ export const WhatWeDo: React.FC = () => {
                 href={reel.reelUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex-none w-[240px] sm:w-[270px] lg:w-[290px] aspect-[9/16] rounded-3xl overflow-hidden bg-[#242221] border border-[#F0E6E1] shadow-xs hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 snap-start cursor-pointer focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#E4AD91]"
+
+className="group relative flex-none w-[78vw] max-w-[320px] sm:w-[270px] lg:w-[290px] aspect-[9/16] rounded-3xl overflow-hidden bg-[#242221] border border-[#F0E6E1] shadow-xs hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1.5 snap-start cursor-pointer focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-[#E4AD91]"
+
                 aria-label={`Open Instagram Reel: ${reel.title}`}
               >
                 {/* Reel Cover Thumbnail */}
